@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información sobre Torpedovelutina, herramienta diseñada para la eliminación de nidos de Vespa velutina. Consulta las instrucciones y descarga el documento.">
+  <meta name="theme-color" content="#c91522">
+  <title>Torpedovelutina | Información e instrucciones</title>
+  <style>
+    :root { --red:#c91522; --red-dark:#9e101a; --ink:#202124; --muted:#60656d; --cream:#fffaf5; --line:#ece7e2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.6; background:#fff; }
+    a { color:inherit; }
+    .topbar { background:var(--red); color:#fff; padding:11px 20px; text-align:center; font-size:.92rem; letter-spacing:.04em; }
+    header { max-width:1120px; margin:auto; padding:22px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { display:flex; align-items:center; gap:14px; text-decoration:none; font-weight:800; letter-spacing:.04em; }
+    .brand img { width:68px; height:68px; object-fit:contain; }
+    nav { display:flex; flex-wrap:wrap; gap:22px; }
+    nav a { text-decoration:none; color:#454545; font-weight:700; font-size:.94rem; }
+    nav a:hover { color:var(--red); }
+    .hero { background:linear-gradient(135deg,#fff8f4 0%,#fff 70%); border-top:1px solid var(--line); }
+    .hero-inner { max-width:1120px; margin:auto; padding:62px 24px 66px; display:grid; grid-template-columns:1.2fr .8fr; gap:48px; align-items:center; }
+    .eyebrow { color:var(--red); font-weight:800; text-transform:uppercase; letter-spacing:.13em; font-size:.8rem; }
+    h1 { font-size:clamp(2.35rem,5vw,4.2rem); line-height:1.04; margin:13px 0 20px; letter-spacing:-.045em; }
+    h1 span { color:var(--red); }
+    .hero p { color:var(--muted); font-size:1.13rem; max-width:650px; }
+    .hero-logo { display:flex; justify-content:center; }
+    .hero-logo img { width:min(100%,350px); height:auto; filter:drop-shadow(0 12px 18px rgba(0,0,0,.10)); }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:13px 20px; border-radius:7px; text-decoration:none; font-weight:800; border:2px solid var(--red); transition:.2s; }
+    .btn-primary { background:var(--red); color:white; }
+    .btn-primary:hover { background:var(--red-dark); border-color:var(--red-dark); }
+    .btn-secondary { color:var(--red); background:white; }
+    .btn-secondary:hover { background:#fff0f0; }
+    main section { max-width:1120px; margin:auto; padding:62px 24px; }
+    h2 { font-size:clamp(1.8rem,3vw,2.5rem); margin:0 0 16px; letter-spacing:-.03em; }
+    .intro { color:var(--muted); max-width:760px; margin:0 0 30px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { border:1px solid var(--line); border-radius:12px; padding:24px; background:#fff; }
+    .card .number { color:var(--red); font-weight:900; font-size:.85rem; letter-spacing:.1em; }
+    .card h3 { margin:8px 0; font-size:1.15rem; }
+    .card p { color:var(--muted); margin:0; }
+    .notice { background:var(--cream); border-left:5px solid var(--red); padding:22px 24px; border-radius:0 10px 10px 0; margin-top:28px; }
+    .notice strong { display:block; margin-bottom:5px; }
+    .download { background:#f7f7f7; border-radius:16px; padding:36px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .download p { color:var(--muted); margin:5px 0 0; }
+    .contact { background:#202124; color:#fff; }
+    .contact-inner { max-width:1120px; margin:auto; padding:58px 24px; }
+    .contact .intro { color:#d0d0d0; }
+    .contact-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px; }
+    .contact-item { border:1px solid #4b4b4b; border-radius:10px; padding:20px; text-decoration:none; }
+    .contact-item small { display:block; color:#bcbcbc; margin-bottom:5px; }
+    .contact-item strong { font-size:1.05rem; overflow-wrap:anywhere; }
+    .contact-item:hover { border-color:#ff626b; background:#292929; }
+    footer { background:#171719; color:#bdbdbd; padding:20px 24px; text-align:center; font-size:.9rem; }
+    footer strong { color:#fff; }
+    @media (max-width:760px) {
+      header { flex-direction:column; }
+      nav { justify-content:center; gap:14px; }
+      .hero-inner { grid-template-columns:1fr; text-align:center; padding-top:42px; }
+      .hero p { margin-left:auto; margin-right:auto; }
+      .actions { justify-content:center; }
+      .hero-logo { grid-row:1; }
+      .hero-logo img { width:220px; }
+      .cards, .contact-grid { grid-template-columns:1fr; }
+      .download { flex-direction:column; align-items:flex-start; padding:26px; }
+      main section { padding:48px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Información y documentación de TORPEDOVELUTINA</div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="Torpedovelutina, inicio">
+      <img src="assets/mini-logo.jpg" alt="Logotipo de Torpedovelutina">
+      <span>TORPEDOVELUTINA</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#informacion">Información</a>
+      <a href="#documento">Instrucciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="inicio">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Vespa velutina</div>
+        <h1>Conoce <span>Torpedovelutina</span></h1>
+        <p>El Torpedovelutina es una herramienta diseñada para facilitar la eliminación de nidos de Vespa velutina. En esta página encontrarás información general sobre el proyecto y un documento con las instrucciones de uso.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="Instrucciones-Torpedovelutina.pdf" download>Descargar instrucciones PDF</a>
+          <a class="btn btn-secondary" href="#contacto">Contactar</a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/logo-torpedovelutina.jpg" alt="Logotipo Torpedovelutina">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="informacion">
+      <div class="eyebrow">El proyecto</div>
+      <h2>Información sobre Torpedovelutina</h2>
+      <p class="intro">Estos son algunos de sus puntos principales:</p>
+      <div class="cards">
+        <article class="card">
+          <div class="number">01 · HERRAMIENTA</div>
+          <h3>¿Qué es?</h3>
+          <p>Una herramienta concebida para eliminar nidos de Vespa velutina. Está pensada para nidos visibles en los que pueda quedar colocada.</p>
+        </article>
+        <article class="card">
+          <div class="number">02 · LICENCIA</div>
+          <h3>Uso y autoría</h3>
+          <p>Su diseño se comparte gratuitamente bajo una licencia Creative Commons, con reconocimiento de la autoría y sin comercialización. Las obras derivadas quedan sujetas a la misma licencia.</p>
+        </article>
+        <article class="card">
+          <div class="number">03 · COLABORACIÓN</div>
+          <h3>Compartir experiencias</h3>
+          <p>El proyecto fomenta la colaboración para compartir dudas, experiencias, sugerencias y posibles mejoras del diseño original.</p>
+        </article>
+      </div>
+      <div class="notice">
+        <strong>Importante: seguridad y normativa</strong>
+        Nunca se debe actuar sin los equipos de protección individual (EPIs) adecuados. La intervención sobre nidos puede provocar una respuesta agresiva de los avispones. Cualquier producto biocida debe utilizarse únicamente conforme a su etiquetado, autorización y normativa aplicable. Ante dudas o riesgos, recurre a profesionales o a los servicios competentes.
+      </div>
+    </section>
+
+    <section id="documento">
+      <div class="eyebrow">Documento original</div>
+      <h2>Instrucciones de uso</h2>
+      <div class="download">
+        <div>
+          <h3 style="margin:0">Instrucciones de Torpedovelutina (PDF)</h3>
+          <p>Consulta el documento completo, que incluye las indicaciones, restricciones y notas del proyecto.</p>
+        </div>
+        <a class="btn btn-primary" href="Instrucciones-Torpedovelutina.pdf" download>Descargar PDF ↓</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" id="contacto">
+    <div class="contact-inner">
+      <div class="eyebrow" style="color:#ff737b">Estamos en contacto</div>
+      <h2>¿Tienes dudas o quieres colaborar?</h2>
+      <p class="intro">Puedes contactar para compartir consultas, experiencias, sugerencias o mejoras sobre Torpedovelutina.</p>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:torpedovelutina@gmail.com">
+          <small>Correo electrónico</small><strong>torpedovelutina@gmail.com</strong>
+        </a>
+        <a class="contact-item" href="https://wa.me/34626989010" target="_blank" rel="noopener">
+          <small>WhatsApp</small><strong>626 989 010</strong>
+        </a>
+        <a class="contact-item" href="https://www.instagram.com/explore/tags/torpedovelutina/" target="_blank" rel="noopener">
+          <small>Hashtag</small><strong>#torpedovelutina</strong>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="year">2026</span> <strong>TORPEDOVELUTINA</strong> · Información del proyecto</footer>
+</body>
+</html>
